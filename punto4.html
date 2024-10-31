@@ -8,8 +8,8 @@
 <body>
     <script>
         let user = 'micke';
-        let numer_generado;
-        let numero_user = parseInt(prompt("Adivine el numero señor: " + user));
+        let numer_generado = Math.floor(Math.random()* 10)+1;
+        let numero_user = parseInt(prompt("Adivine un numero entre 1 y 10 señor: " + user));
 
         if(numero_user == numer_generado){
             console.log("¡Felicidades, adivinaste el número!");
